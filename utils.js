@@ -67,4 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle query string on load
     handleQueryString();
+
+    const emailSpans = document.querySelectorAll('.contact-email');
+    emailSpans.forEach(function(span) {
+        span.textContent = 'kaendid.one' + '@gmail.com';
+    });
 });
